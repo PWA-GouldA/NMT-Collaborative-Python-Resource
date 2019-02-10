@@ -1,0 +1,54 @@
+name: Smart Banner
+version: 1.0.0
+description: A quick and simple way to add Apple's Smart Banners for iOS apps to your Grav website.
+icon: adn
+author:
+  name: Craig Phillips
+  email: support@craigphillips.biz
+homepage: https://github.com/cppl/grav-plugin-smart-banner
+demo: https://sunrisetimes.app
+keywords: grav, plugin, etc
+bugs: https://github.com/cppl/grav-plugin-smart-banner/issues
+docs: https://github.com/cppl/grav-plugin-smart-banner/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    appID:
+      type: text
+      label: PLUGIN_SMART_BANNER.APP_ID
+      help: PLUGIN_SMART_BANNER.APP_ID_HELP
+      default: ""
+      placeholder: PLUGIN_SMART_BANNER.APP_ID_HINT
+    appID_image:
+      type: display
+      size: large
+      markdown: true
+      content: PLUGIN_SMART_BANNER.APP_ID_DISPLAY
+    affiliateToken:
+      type: text
+      label: PLUGIN_SMART_BANNER.AFFILIATE_TOKEN
+      help: PLUGIN_SMART_BANNER.AFFILIATE_TOKEN_HELP
+      placeholder: PLUGIN_SMART_BANNER.AFFILIATE_TOKEN_HINT
+    deeplink:
+      type: text
+      label: PLUGIN_SMART_BANNER.DEEPLINK
+      help: PLUGIN_SMART_BANNER.DEEPLINK_HELP
+      placeholder: PLUGIN_SMART_BANNER.DEEPLINK_HINT
+    moreInfo:
+      type: display
+      size: large
+      label: PLUGIN_SMART_BANNER.MOREINFO
+      markdown: true
+      content: PLUGIN_SMART_BANNER.MOREINFO_CONTENT

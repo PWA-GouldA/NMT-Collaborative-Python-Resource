@@ -1,0 +1,44 @@
+.notices {
+    padding: 1px 1px 1px 30px;
+    margin: 15px 0;
+}
+
+.notices p {
+
+}
+
+.notices.black {
+    border-left: 10px solid #666666;
+    background: #333333;
+    color: #f0f0f0;
+}
+
+.notices.yellow {
+    border-left: 10px solid #f0ad4e;
+    background: #df8a13;
+    color: #fcf8f2;
+}
+
+.notices.red {
+    border-left: 10px solid #d9534f;
+    background: #b52b27;
+    color: #fdf7f7;
+}
+
+.notices.purple {
+    border-left: 10px solid #aa55aa;
+    background: #992299;
+    color: #f1f9f1;
+}
+
+.notices.blue {
+    border-left: 10px solid #5bc0de;
+    background: #28a1c5;
+    color: #f4f8fa;
+}
+
+.notices.green {
+    border-left: 10px solid #5cb85c;
+    background: #3d8b3d;
+    color: #f1f9f1;
+}

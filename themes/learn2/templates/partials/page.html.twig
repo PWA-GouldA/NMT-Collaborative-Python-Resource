@@ -1,0 +1,27 @@
+<div id="body-inner">
+
+    <h1>{{ page.title }}</h1>
+
+	{% if page.content|readingtime is not empty %}
+	<p>Reading time: {{ page.content|readingtime }}</p>
+	{% endif %}
+
+	<hr/>
+	
+	{% if config.get('plugins.page-toc.active') or attribute(page.header, 'page-toc').active %}
+	<div class="page-toc">
+		{% set table_of_contents = toc(page.content) %}
+		{% if table_of_contents is not empty %}
+			<h4>Table of Contents</h4>
+			{{ table_of_contents }}
+		{% endif %}
+	</div>
+	{% endif %}
+
+	<hr/>
+	
+    <p>
+    	{{ page.content }}
+    </p>
+	
+</div>
